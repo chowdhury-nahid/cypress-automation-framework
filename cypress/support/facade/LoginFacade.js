@@ -2,15 +2,15 @@
 import LoginPage from "../pages/LoginPage";
 
 const baseUrl = 'https://www.saucedemo.com/';
-let userName = 'standard_user';
-let password = "secret_sauce"
+let userName = Cypress.env('username');
+let password = Cypress.env('password');
 
 class LoginFacade {
     standardUserLogin() {
         LoginPage.visitLoginPage()
             .fillUsername(userName)
             .fillPassword(password)
-            .submit();
+            .clickLogin();
         cy.url().should('eq', baseUrl + 'inventory.html');
         return this;
     }

@@ -32,7 +32,7 @@ class LoginPage {
         return this;
     }
 
-    submit() {
+    clickLogin() {
         cy.get('#login-button').click();
         cy.log('Login button clicked');
         return this;
