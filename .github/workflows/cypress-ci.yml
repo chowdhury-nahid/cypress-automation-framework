@@ -41,3 +41,10 @@ jobs:
         with:
           name: cypress-artifacts
           path: cypress/videos/
+
+      # Step 6: Upload Mochawesome report
+      - name: Upload Mochawesome report
+        uses: actions/upload-artifact@v3
+        with:
+          name: mochawesome-report
+          path: cypress/reports/
