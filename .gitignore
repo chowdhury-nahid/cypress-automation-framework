@@ -1,0 +1,43 @@
+# Node.js dependencies
+node_modules/
+
+# Cypress output
+cypress/videos/
+cypress/screenshots/
+
+# Cypress configuration cache
+cypress.json
+cypress.env.json
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Build output
+dist/
+build/
+
+# Coverage reports
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Other
+*.locks
