@@ -3,7 +3,7 @@
 class CommonPage {
 
     pageObjects = {
-        title: () => cy.get('.title'),
+        title: () => cy.get('.title', { timeout: 10000 }).should('be.visible'),
         
     }
 

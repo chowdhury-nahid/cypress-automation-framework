@@ -5,6 +5,11 @@ node_modules/
 cypress/videos/
 cypress/screenshots/
 
+# Cypress reports
+cypress/reports/
+cypress/reports/html/
+cypress/reports/assets/
+
 # Cypress configuration cache
 cypress.json
 cypress.env.json
@@ -39,5 +44,9 @@ coverage/
 *.tmp
 *.temp
 
+# Lock files
+*.lock
+
 # Other
-*.locks
+*.bak
+*.swp
